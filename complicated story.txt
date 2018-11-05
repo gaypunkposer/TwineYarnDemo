@@ -1,0 +1,63 @@
+:: StoryTitle
+My Complicated Story
+
+:: UserScript[script]
+
+
+
+:: UserStylesheet[stylesheet]
+
+
+
+:: Start
+<<set $light to "dim">>
+<<set $monster to "bear">>
+The wind blows softly through the trees. The sound of rustling leaves is reminiscent of the ocean. The wind gently nips at your ears and nose. You feel both at peace and on edge. These woods are full of monsters and night rapidly approaches. What do you do?
+
+[[Build a fire|Fire]]
+[[Try to find your way out|Escape]]
+[[Resign to your fate|Dead]]
+
+:: Fire
+<<set $light to "bright">>
+You collect some dry wood and begin to build your campfire. You carefully stack the logs and sprinkle some kindling around for good measure. Once you're satisfied with your craftsmanship, you strike a match and set it all ablaze.
+
+What do you do now?
+[[Try to get some sleep|Sleep]]
+[[Craft a weapon|Make]]
+<<set $monster to "big strong thing that hates yodeling idk names are hard">>
+[[Practice your yodeling|Dead]]
+
+:: Escape
+<<set $monster to "something spooky probably">>
+You fail to escape and die.
+[[Dead]]
+
+:: Dead
+I'm sorry to inform you that you have died. Our records show that a "$monster" killed you. How unfortunate. Would you like to try again?
+
+[[Yes|Start]] 
+
+:: Sleep
+<<if $light is "bright">>
+It's too bright. You cannot sleep.
+[[Do something else.|Fire]]
+<<else>>
+You fall asleep quite peacefully, blissfully unaware of your impending death.
+<<set $monster to "that minecraft monster in the new update that attacks you if you don't sleep for like three days">>
+[[Dead]] 
+<</if>>
+
+:: Make
+<<set $monster to "an even bigger rock with even better clothes">>
+You find a sturdy stick and the sharp looking rock. You ask the rock for fashion advice and where it got those snazzy clothes. The rock does not respond.
+
+[[This is unacceptable. Destroy the rock.|Dead]]
+[[Put the rock down. You will find your own style, eventually.|Fire]]
+[[Turn the rock into a weapon. Poison your enemies with its sick threads.|Weapon]]
+
+
+:: Weapon
+<<set $monster to "your own hubris">>
+You accidentally stab yourself with the rock. 
+[[Dead]]

@@ -1,0 +1,102 @@
+title: StoryTitle
+tags: 
+colorID: 0
+position: 80,80
+---
+My Complicated Story
+===
+title: UserScript
+tags: script
+colorID: 0
+position: 160,160
+---
+
+===
+title: UserStylesheet
+tags: stylesheet
+colorID: 0
+position: 240,240
+---
+
+===
+title: Start
+tags: 
+colorID: 0
+position: 320,320
+---
+<<set $light to "dim">><<set $monster to "bear">>
+The wind blows softly through the trees. The sound of rustling leaves is reminiscent of the ocean. The wind gently nips at your ears and nose. You feel both at peace and on edge. These woods are full of monsters and night rapidly approaches. What do you do?
+
+[[Build a fire|Fire]]
+[[Try to find your way out|Escape]]
+[[Resign to your fate|Dead]]
+
+===
+title: Fire
+tags: 
+colorID: 0
+position: 400,400
+---
+<<set $light to "bright">>You collect some dry wood and begin to build your campfire. You carefully stack the logs and sprinkle some kindling around for good measure. Once you're satisfied with your craftsmanship, you strike a match and set it all ablaze.
+
+What do you do now?
+[[Try to get some sleep|Sleep]]
+[[Craft a weapon|Make]]
+<<set $monster to "big strong thing that hates yodeling idk names are hard">>
+[[Practice your yodeling|Dead]]
+
+===
+title: Escape
+tags: 
+colorID: 0
+position: 748,249
+---
+<<set $monster to "something spooky probably">>You fail to escape and die.
+[[Dead]]
+
+===
+title: Dead
+tags: 
+colorID: 0
+position: 560,560
+---
+I'm sorry to inform you that you have died. Our records show that a "$monster" killed you. How unfortunate. Would you like to try again?
+[[Yes|Start]]
+
+===
+title: Sleep
+tags: 
+colorID: 0
+position: 640,640
+---
+<<if $light is "bright">>It's too bright. You cannot sleep.
+[[Do something else.|Fire]]
+<<else>>
+You fall asleep quite peacefully, blissfully unaware of your impending death.
+<<set $monster to "that minecraft monster in the new update that attacks you if you don't sleep for like three days">>
+[[Dead]]
+<</if>>
+
+===
+title: Make
+tags: 
+colorID: 0
+position: 720,720
+---
+<<set $monster to "an even bigger rock with even better clothes">>You find a sturdy stick and the sharp looking rock. You ask the rock for fashion advice and where it got those snazzy clothes. The rock does not respond.
+
+[[This is unacceptable. Destroy the rock.|Dead]]
+[[Put the rock down. You will find your own style, eventually.|Fire]]
+[[Turn the rock into a weapon. Poison your enemies with its sick threads.|Weapon]]
+
+
+===
+title: Weapon
+tags: 
+colorID: 0
+position: 800,800
+---
+<<set $monster to "your own hubris">>You accidentally stab yourself with the rock.
+[[Dead]]
+
+===
