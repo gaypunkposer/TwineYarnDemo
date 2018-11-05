@@ -45,6 +45,12 @@ public class DialogueUIManager : Yarn.Unity.DialogueUIBehaviour
         string str = "";
         for (int i = 0; i < dialogue.Length; i++)
         {
+            if (Input.anyKeyDown)
+            {
+                Dialogue.text = dialogue;
+                yield return new WaitForSecondsRealtime(0.5f);
+                break;
+            }
             str += dialogue[i];
             Dialogue.text = str;
 

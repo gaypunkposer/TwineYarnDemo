@@ -889,7 +889,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114764547129335966}
         m_MethodName: SetOption
         m_Mode: 3
         m_Arguments:
@@ -929,14 +929,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sourceText: []
+  sourceText:
+  - {fileID: 4900000, guid: ce8b8b06d9d07dd4c8419ab71c9e1028, type: 3}
   stringGroups: []
   shouldOverrideLanguage: 0
   overrideLanguage: 10
   variableStorage: {fileID: 114564140449054580}
   dialogueUI: {fileID: 114764547129335966}
   startNode: Start
-  startAutomatically: 0
+  startAutomatically: 1
   automaticCommands: 1
 --- !u!114 &114348427182770182
 MonoBehaviour:
@@ -977,7 +978,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114764547129335966}
         m_MethodName: SetOption
         m_Mode: 3
         m_Arguments:
@@ -1029,7 +1030,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114764547129335966}
         m_MethodName: SetOption
         m_Mode: 3
         m_Arguments:

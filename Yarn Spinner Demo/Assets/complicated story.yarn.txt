@@ -75,7 +75,7 @@ position: 640,640
 You fall asleep quite peacefully, blissfully unaware of your impending death.
 <<set $monster to "that minecraft monster in the new update that attacks you if you don't sleep for like three days">>
 [[Dead]]
-<</if>>
+<<endif>>
 
 ===
 title: Make
