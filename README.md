@@ -15,7 +15,7 @@ This involves a few steps, and I really want to automate this process in the fut
   a response, and continue along a set story. Normally in Twine this would require multiple nodes.
 5. Save as Yarn.  
   Save as a .yarn.txt file in your Unity assets folder
-6. Load the Dialogue prefab into your Unity scene.  
+6. Load the Dialogue prefab from Dialogue.unitypackage into your Unity scene.  
   The basic prefab includes three possible responses, a speaker text object, and a dialogue text object, along with the script necessary to run it.
 7. Add your dialogue to the Dialogue Runner object in the editor, or add it later using DialogueRunner.AddScipt(your script).  
 8. Call Start() or Start(string node) on the DialogueRunner object to start the dialogue.
