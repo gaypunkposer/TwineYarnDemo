@@ -4,7 +4,7 @@ A Unity project with a Twine story ported to Yarn Spinner
 # Porting a Twine story to Yarn
 This involves a few steps, and I really want to automate this process in the future.  
 1. Convert your Twine story to Twee  
-  This involves setting [http://www.maximumverbosity.net/twine/Entweedle]Entweedle as your Story Format  
+  This involves setting [http://www.maximumverbosity.net/twine/Entweedle] Entweedle as your Story Format  
 2. Copy the Twee code to a .txt file  
   Once Entweedle is your Story Format, hit play. Copy the output from the popup window into a new .txt file. Pressing "Publish to File"
   creates an HTML document with the Twee code inside, which is not what we want.
